@@ -1,0 +1,22 @@
+version: "3.4"
+services:
+  serial_monitor_vite:
+    build: ./Frontend
+    container_name: serial_monitor_vite
+    ports:
+      - 5123:5123
+    command: npm run dev
+    networks:
+      - serialnet
+  serial_monitor_asp:
+    build: ./Backend
+    container_name: serial_monitor_dotnet
+    ports:
+      - 5321:5321
+    command: dotnet Backend.dll
+    networks:
+      - serialnet
+
+networks:
+  serialnet:
+     name: serialnet

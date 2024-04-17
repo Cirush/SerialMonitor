@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/Users/juanignaciogarciabartolome/Desktop/Master Ingenieria Informatica/Sistemas Empotrados, Distribuidos y Ubícuos/Test/SerialMonitor/Backend/Backend.csproj": {}
+    "C:\\dev\\Test\\SerialMonitor\\SerialMonitor\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "/Users/juanignaciogarciabartolome/Desktop/Master Ingenieria Informatica/Sistemas Empotrados, Distribuidos y Ubícuos/Test/SerialMonitor/Backend/Backend.csproj": {
+    "C:\\dev\\Test\\SerialMonitor\\SerialMonitor\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/juanignaciogarciabartolome/Desktop/Master Ingenieria Informatica/Sistemas Empotrados, Distribuidos y Ubícuos/Test/SerialMonitor/Backend/Backend.csproj",
+        "projectUniqueName": "C:\\dev\\Test\\SerialMonitor\\SerialMonitor\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "/Users/juanignaciogarciabartolome/Desktop/Master Ingenieria Informatica/Sistemas Empotrados, Distribuidos y Ubícuos/Test/SerialMonitor/Backend/Backend.csproj",
-        "packagesPath": "/Users/juanignaciogarciabartolome/.nuget/packages/",
-        "outputPath": "/Users/juanignaciogarciabartolome/Desktop/Master Ingenieria Informatica/Sistemas Empotrados, Distribuidos y Ubícuos/Test/SerialMonitor/Backend/obj/",
+        "projectPath": "C:\\dev\\Test\\SerialMonitor\\SerialMonitor\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\juag\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\Test\\SerialMonitor\\SerialMonitor\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/juanignaciogarciabartolome/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\juag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://gs2-tfs.pcinfra.net:81/DevelopmentPackages/nuget": {},
+          "http://gs2-tfs.pcinfra.net:81/NuGetServer/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
