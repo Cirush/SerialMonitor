@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5123,
     proxy: {
       '^/api/.*': {
-        target: 'http://serial_monitor_asp:5321',
+        target: 'http://localhost:5321',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
         ws: true

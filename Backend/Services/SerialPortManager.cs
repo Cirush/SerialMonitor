@@ -78,10 +78,15 @@ public class SerialPortManager : ISerialPortManager
         char[] readBuffer = new char[256];
         if(_serialPort.IsOpen)
         {
-            var command = "[S]".ToCharArray();
-            _serialPort.Write(command, 0, command.Length);
-            _serialPort.Read(readBuffer, 0, readBuffer.Length);
-            return ParseAndValidateMessage(new String(readBuffer));
+            try
+            {
+                var command = "[S]".ToCharArray();
+                _serialPort.Write(command, 0, command.Length);
+                _serialPort.Read(readBuffer, 0, readBuffer.Length);
+                return ParseAndValidateMessage(new String(readBuffer));
+            }catch(Exception ex){
+                _logger.LogError(ex, "There was a problem reading data.");
+            }
         }
         
         return new SensorData();

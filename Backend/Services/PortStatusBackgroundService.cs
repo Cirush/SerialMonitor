@@ -30,7 +30,5 @@ public class PortStatusBackgroundService : BackgroundService
 
             await Task.Delay(TimeSpan.FromMilliseconds(1000), stoppingToken);
         }
-
-        _logger.LogInformation("SerialBackgroundService is stopping.");
     }
 }

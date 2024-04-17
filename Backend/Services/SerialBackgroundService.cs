@@ -23,16 +23,11 @@ public class SerialBackgroundService : BackgroundService
         stoppingToken.Register(() =>
             _logger.LogInformation("SerialBackgroundService is stopping."));
 
-        int count = 0;
         while (!stoppingToken.IsCancellationRequested)
         {
-            var message = $"{count++}";
-
             await _hubContext.Clients.All.ReceiveSerialData(_serialPortManager.Read());
 
             await Task.Delay(TimeSpan.FromMilliseconds(1000), stoppingToken);
         }
-
-        _logger.LogInformation("SerialBackgroundService is stopping.");
     }
 }
