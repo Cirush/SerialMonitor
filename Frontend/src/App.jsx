@@ -1,16 +1,14 @@
 import * as React from 'react';
-import './App.css'
-import { CssBaseline, Container, Typography, Box } from '@mui/material';
+import { CssBaseline, Container, Box } from '@mui/material';
 import { SerialMonitor } from './Components/SerialMonitor';
+import './App.css'
 
 function App() {
   return (
     <>
-      <CssBaseline />
-      <Container maxWidth="xl">
-        <Box display="flex" alignItems="center" justifyContent="center" >
+    <CssBaseline />
+      <Container>
           <SerialMonitor />
-        </Box>
       </Container>
     </>
   );

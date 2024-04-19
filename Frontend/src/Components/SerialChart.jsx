@@ -1,17 +1,25 @@
-import { Card, Typography } from "@mui/material";
+import { Box, Card, Paper, Typography } from "@mui/material";
 import { LineChart } from '@mui/x-charts/LineChart';
 
 export function SerialChart({Tile, xData, yData}) {
     
-    const maxPoints = 300;
+    const maxPoints = 30;
 
     return(
-        <Card sx={{ flex: '1 0 calc(50% - 16px)', maxWidth: "500px", minWidth: "500px" }}>
-            <Typography variant="h5" component="div">
+        <Box display={'flex'} 
+            justifyContent={'center'} 
+            alignItems={'center'} 
+            flexDirection={'column'}
+            boxShadow={3}
+            borderRadius={3}
+            padding={1}
+            >
+            <Typography variant="body1">
             {Tile}
             </Typography>
+            {                
             <LineChart skipAnimation={xData.length < maxPoints ? false : true}
-            xData={[{ data: xData }]}
+            xData={[{ data: {xData} }]}
             series={[
                 {
                     data: yData,
@@ -20,9 +28,10 @@ export function SerialChart({Tile, xData, yData}) {
                     curve: "linear",
                 },
             ]}
-            width={500}
+            width={300}
             height={300}
             />
-        </Card>
+            }
+        </Box>
     );
 }

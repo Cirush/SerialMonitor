@@ -35,7 +35,7 @@ export const SerialCharts = () => {
   }, [data])
   
   return (
-      <Box display="flex" justifyContent="center"  flexWrap="wrap" gap={2} >
+      <Box display='flex' justifyContent='center' flexWrap='wrap' gap={5}>
         <SerialChart Tile="Temperature Cº" xData={xData} yData={temperature}/>
         <SerialChart Tile="Humidity" xData={xData} yData={humidity}/>
         <SerialChart Tile="Brightness" xData={xData} yData={brightness}/>
