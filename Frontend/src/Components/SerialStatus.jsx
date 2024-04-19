@@ -11,7 +11,7 @@ export const SerialStatus = () => {
             justifyContent={'space-around'}             
             margin={3}
             padding={1}
-            boxShadow={2}
+            boxShadow={0}
             borderRadius={1}
             overflow={'hidden'}
             flexWrap={'wrap'}
@@ -36,14 +36,3 @@ export const SerialStatus = () => {
         </Box>
     );
 }
-
-// display={'flex'} 
-//             flexDirection={'column'} 
-//             justifyContent={'center'} 
-//             alignItems={'center'} 
-//             minWidth={'300px'} 
-//             boxShadow={3} 
-//             padding={3} 
-//             borderRadius={2} 
-//             bgcolor={'background.paper'} 
-//             color={'text.primary'}
